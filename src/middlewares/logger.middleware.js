@@ -10,5 +10,5 @@
 export const loggerMiddleware = (req, res, next) => {
   const fechaHora = new Date().toISOString()
   console.log(`[${fechaHora}] ${req.method} - ${req.originalUrl} - Body:`, req.body)
-  next(); 
+  next()
 }

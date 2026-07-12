@@ -1,4 +1,4 @@
-import * as z from 'zod';
+import * as z from 'zod'
 
 /*
 ## 2. Reglas de Validación (Implementar con Zod)
@@ -18,8 +18,8 @@ export const solicitudSchema = z.object({
   montoSolicitado: z.number().min(1000).max(100000),
   plazoMeses: z.number().int().min(1).max(60),
   tasaInteres: z.number().optional().default(5.0) // Si o nse envía, Zod lo setea en 5.0 automáticamente
-}).strict();
+}).strict()
 
 export const estadoSchema = z.object({
   estado: z.enum(["APROBADA", "RECHAZADA"]) // Solo permite estos dos valores
-}).strict();
+}).strict()
