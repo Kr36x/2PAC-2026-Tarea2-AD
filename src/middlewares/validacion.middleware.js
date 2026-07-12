@@ -9,16 +9,16 @@
 
 export const validateSchema = (schema) => (req, res, next) => {
   // Procesamos la info con safeParse para validar de forma segura [5]
-  const result = schema.safeParse(req.body); 
+  const result = schema.safeParse(req.body)
   
   if (!result.success) {
     return res.status(400).json({
       status: 400,
       message: "Errores de validación",
       data: result.error.errors
-    });
+    })
   }
   // Si todo es válido, reemplazamos el body con la data parseada (para aplicar el default de tasaInteres)
-  req.body = result.data; 
-  next();
+  req.body = result.data
+  next()
 };
