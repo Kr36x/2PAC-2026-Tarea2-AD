@@ -29,12 +29,12 @@ export default class SolicitudModel {
       fechaCreacion: new Date().toISOString()
     }
     solicitudes.push(nuevaSolicitud)
-    return nuevaSolicitud;
+    return nuevaSolicitud
   }
 
   static async getAll({ estado }) {
     if (estado) {
-      return solicitudes.filter(s => s.estado === estado);
+      return solicitudes.filter(s => s.estado === estado)
     }
     return solicitudes
   }
@@ -69,6 +69,6 @@ export default class SolicitudModel {
     if (index === -1) return false
     
     solicitudes.splice(index, 1)
-    return true;
+    return true
   }
 }
