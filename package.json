@@ -1,0 +1,26 @@
+{
+  "name": "2pac-2026-tarea2-ad",
+  "version": "1.0.0",
+  "description": "Tarea de la segunda unidad. Carlos Alvarez",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kr36x/2PAC-2026-Tarea2-AD.git"
+  },
+  "keywords": [],
+  "author": "Carlos Alvarez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kr36x/2PAC-2026-Tarea2-AD/issues"
+  },
+  "homepage": "https://github.com/Kr36x/2PAC-2026-Tarea2-AD#readme",
+  "type": "module",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "zod": "^4.4.3"
+  }
+}
